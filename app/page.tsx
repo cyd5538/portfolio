@@ -1,7 +1,16 @@
+import Container from "@/components/Container";
+import Nav from "@/components/Nav";
+import { AuroraBackground } from "@/components/ui/aurora-background";
+
 export default function Home() {
   return (
-    <>
-      gd
-    </>
+    <Container>
+      <Nav />
+      <AuroraBackground>
+        <main>
+          
+        </main>
+      </AuroraBackground>
+    </Container>
   );
 }
