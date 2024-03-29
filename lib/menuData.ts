@@ -1,27 +1,18 @@
 export const menu = [
   {
     id: 1,
-    name: "Home",
-    image: "/blossom.png"
+    name: "About",
   },
   {
     id: 2,
-    name: "About",
-    image: "/blossom.png"
+    name: "Skills",
   },
   {
     id: 3,
-    name: "Skills",
-    image: "/blossom.png"
+    name: "Project",
   },
   {
     id: 4,
-    name: "Project",
-    image: "/blossom.png"
-  },
-  {
-    id: 5,
     name: "Contact",
-    image: "/blossom.png"
   },
 ];
