@@ -1,16 +1,16 @@
+"use client";
+
 import Container from "@/components/Container";
+import Main from "@/components/Home/Home";
 import Nav from "@/components/Nav";
-import { AuroraBackground } from "@/components/ui/aurora-background";
 
 export default function Home() {
   return (
-    <Container>
+    <div className="bg-sky-500">
       <Nav />
-      <AuroraBackground>
-        <main>
-          
-        </main>
-      </AuroraBackground>
-    </Container>
+      <Container>
+        <Main /> 
+      </Container>
+    </div>
   );
 }
