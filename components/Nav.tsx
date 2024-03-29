@@ -4,7 +4,7 @@ import { Home } from 'lucide-react'
 
 const Nav = () => {
   return (
-    <header className='z-40 w-full h-14 bg-white opacity-50 fixed justify-center items-center gap-12'>
+    <header className='z-40 w-full h-14 bg-white opacity-50 fixed left-0 top-0 justify-center items-center gap-12'>
       <nav className='container flex justify-between items-center h-14 pl-12 pr-12'>
         <h1 className='cursor-pointer text-xl hover:text-sky-500 opacity-100'>
           <Home size={25}/>

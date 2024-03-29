@@ -10,7 +10,7 @@ const HomeBlossom = () => {
   return (
     <Confetti
       className='z-50'
-      width={width}
+      width={width-30}
       height={height}
       colors={["ff99cc"]}
       numberOfPieces={30}
