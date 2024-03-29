@@ -1,6 +1,7 @@
 import React from 'react'
 import { TypewriterEffect } from '../ui/typewriter-effect'
 import HomeBlossom from './HomeBlossom';
+import Container from '../Container';
 
 const Main = () => {
 
@@ -27,13 +28,15 @@ const Main = () => {
   ];
 
   return (
-    <main className='h-screen w-full'>
-      <HomeBlossom />
-      <div className='h-screen w-full flex justify-center items-center'>
-        <div className='w-2/3'>
-          <TypewriterEffect words={words}/>
+    <main className='h-screen w-full bg-sky-300'>
+      <Container>
+        <HomeBlossom />
+        <div className='h-screen w-full flex justify-center items-center'>
+          <div className='w-2/3'>
+            <TypewriterEffect words={words}/>
+          </div>
         </div>
-      </div>
+      </Container>
     </main>
   )
 }
