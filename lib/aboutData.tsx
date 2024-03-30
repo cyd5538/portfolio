@@ -67,6 +67,7 @@ const cards = [
     className: "md:col-span-2",
     thumbnail:
       "저는 이런사람입니다!",
+    bg: "bg-gradient-to-r to-sky-500 from-white"
   },
   {
     id: 2,
@@ -74,6 +75,7 @@ const cards = [
     className: "col-span-1",
     thumbnail:
       "성격",
+    bg: "bg-gradient-to-r from-sky-500 to-white"
   },
   {
     id: 3,
@@ -81,6 +83,7 @@ const cards = [
     className: "col-span-1",
     thumbnail:
       "나만의 강점",
+    bg: "bg-gradient-to-r from-white to-sky-500"
   },
   {
     id: 4,
@@ -88,6 +91,7 @@ const cards = [
     className: "md:col-span-2",
     thumbnail:
       "저는 _______ 사람입니다.",
+    bg: "bg-gradient-to-r from-sky-500 to-white"
   },
 ];
 

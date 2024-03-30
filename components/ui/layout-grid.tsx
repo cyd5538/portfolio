@@ -9,6 +9,7 @@ type Card = {
   content: JSX.Element | React.ReactNode | string;
   className: string;
   thumbnail: string;
+  bg: string;
 };
 
 export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
@@ -43,14 +44,14 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
             layout
           >
             {selected?.id === card.id && <SelectedCard selected={selected} />}
-            <BlurImage card={card} />
+            <BlurImage card={card} selected={selected} />
           </motion.div>
         </div>
       ))}
       <motion.div
         onClick={handleOutsideClick}
         className={cn(
-          "fixed h-full w-full left-0 top-0 bg-black opacity-0 z-10",
+          "absolute h-full w-full left-0 top-0 bg-black opacity-0 z-10",
           selected?.id ? "pointer-events-auto" : "pointer-events-none"
         )}
         animate={{ opacity: selected?.id ? 0.3 : 0 }}
@@ -59,16 +60,18 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
   );
 };
 
-const BlurImage = ({ card }: { card: Card }) => {
+const BlurImage = ({ card, selected }: { card: Card, selected: Card | null }) => {
   const [loaded, setLoaded] = useState(false);
+  console.log(card.bg)
   return (
     <div
     onLoad={() => setLoaded(true)}
-    className={cn(
-      "bg-pink-100 font-bold object-cover drop-shadow-lg shadow-lg object-top absolute inset-0 h-full w-full transition duration-200 sm:text-3xl text-sm flex justify-center items-center",
-      // loaded ? "blur-none" : "blur-md"
-    )}>
-      {card.thumbnail}
+      className={cn(
+        `object-cover object-top absolute inset-0 h-full w-full transition duration-200 text-black cursor-pointer  flex justify-center items-center`,
+        selected?.thumbnail !== card.thumbnail? "blur-none" : "blur-md",
+        card.bg
+      )}>
+      <p className="text-2xl font-bold">{card.thumbnail}</p>
     </div>
   );
 };
@@ -81,9 +84,9 @@ const SelectedCard = ({ selected }: { selected: Card | null }) => {
           opacity: 0,
         }}
         animate={{
-          opacity: 0.8,
+          opacity: 0.9,
         }}
-        className="absolute inset-0 h-full w-full bg-black opacity-80 z-10"
+        className="absolute inset-0 h-full w-full bg-black opacity-90 z-10"
       />
       <motion.div
         initial={{
