@@ -15,6 +15,7 @@ export const AnimatedTooltip = ({
   items: {
     id: number;
     name: string;
+    designation: string;
     image: string;
   }[];
 }) => {
@@ -23,7 +24,7 @@ export const AnimatedTooltip = ({
   const x = useMotionValue(0); // going to set this value on mouse move
   // rotate the tooltip
   const rotate = useSpring(
-    useTransform(x, [-100, 100], [-45, 45]),
+    useTransform(x, [-200, 200], [-45, 45]),
     springConfig
   );
   // translate the tooltip
@@ -39,7 +40,7 @@ export const AnimatedTooltip = ({
   return (
     <>
       {items.map((item, idx) => (
-        <nav
+        <div
           className="-mr-4  relative group"
           key={item.name}
           onMouseEnter={() => setHoveredIndex(item.id)}
@@ -62,26 +63,29 @@ export const AnimatedTooltip = ({
               style={{
                 translateX: translateX,
                 rotate: rotate,
-                whiteSpace: "nowrap",
               }}
-              className="absolute -top-16 -left-1/2 translate-x-1/2 flex text-xs  flex-col items-center justify-center rounded-md bg-black z-50 shadow-xl px-4 py-2"
+              className="absolute -top-16 -left-1/2 translate-x-1/2 flex text-xs w-40 sm:w-60 h-auto flex-col items-center justify-center rounded-md bg-sky-900 z-50 shadow-xl px-4 py-2"
             >
               <div className="absolute inset-x-10 z-30 w-[20%] -bottom-px bg-gradient-to-r from-transparent via-emerald-500 to-transparent h-px " />
               <div className="absolute left-10 w-[40%] z-30 -bottom-px bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px " />
               <div className="font-bold text-white relative z-30 text-base">
                 {item.name}
               </div>
+              <div className="text-white text-xs">{item.designation}</div>
             </motion.div>
           )}
-          <Image
-            onMouseMove={handleMouseMove}
-            height={100}
-            width={100}
-            src={item.image}
-            alt={item.name}
-            className="object-cover w-10 h-10 !m-0 !p-0 object-top rounded-full cursor-pointer hover:translate-x-[-4px] group-hover:scale-105 group-hover:z-30 border-white  relative transition duration-500"
-          />
-        </nav>
+          <div onMouseMove={handleMouseMove} 
+          className="pobject-cover !m-0 p-2 object-top h-[66px] w-[66px] sm:h-24 sm:w-24 group-hover:scale-105 group-hover:z-30 relative transition duration-500"
+          >
+            <Image
+              height={100}
+              width={100}
+              src={item.image}
+              alt={item.name}
+              className="rounded-full object-cover w-full h-full hover:scale-105 transition duration-500"
+            />
+          </div>
+        </div>
       ))}
     </>
   );
