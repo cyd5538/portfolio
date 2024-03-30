@@ -28,7 +28,7 @@ const Main = () => {
   ];
 
   return (
-    <main className='h-screen w-full pt-14 bg-sky-300'>
+    <main className='h-full w-full pt-14 bg-sky-300'>
       <Container>
         <HomeBlossom />
         <div className='h-screen w-full flex justify-center items-center'>

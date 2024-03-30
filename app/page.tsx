@@ -7,7 +7,7 @@ import Skill from "@/components/Skills/Skill";
 
 export default function Home() {
   return (
-    <div className="">
+    <div id="Home">
       <Nav />
       <Main />
       <About /> 
