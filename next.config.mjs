@@ -2,7 +2,7 @@
 const nextConfig = {
   images: {
     dangerouslyAllowSVG: true,
-    domains: ['skillicons.dev'],
+    domains: ['skillicons.dev',"velog.velcdn.com"],
   },
 };
 export default nextConfig;
