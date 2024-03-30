@@ -1,15 +1,15 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
-import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { cn } from "@/lib/utils";
 
 type Card = {
   id: number;
   content: JSX.Element | React.ReactNode | string;
   className: string;
   thumbnail: string;
-  bg: string;
+  title: string;
 };
 
 export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
@@ -44,7 +44,7 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
             layout
           >
             {selected?.id === card.id && <SelectedCard selected={selected} />}
-            <BlurImage card={card} selected={selected} />
+            <BlurImage card={card} selected={selected}/>
           </motion.div>
         </div>
       ))}
@@ -62,16 +62,24 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
 
 const BlurImage = ({ card, selected }: { card: Card, selected: Card | null }) => {
   const [loaded, setLoaded] = useState(false);
-  console.log(card.bg)
   return (
-    <div
-    onLoad={() => setLoaded(true)}
-      className={cn(
-        `object-cover object-top absolute inset-0 h-full w-full transition duration-200 text-black cursor-pointer  flex justify-center items-center`,
-        selected?.thumbnail !== card.thumbnail? "blur-none" : "blur-md",
-        card.bg
+    <div>
+      <Image
+        src={card.thumbnail}
+        height={500}
+        width={500}
+        onLoad={() => setLoaded(true)}
+        className={cn(
+          "object-cover object-top absolute inset-0 h-full w-full transition duration-200",
+          loaded ? "blur-none" : "blur-md"
+        )}
+        alt="thumbnail"
+      />
+      <p className={cn("absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl text-center font-bold bg-black/70 p-2 px-6 rounded-md",
+        selected?.id === card.id ? "visually-hidden hidden" : "text-white"
       )}>
-      <p className="text-2xl font-bold">{card.thumbnail}</p>
+        {card.title}
+      </p>
     </div>
   );
 };
@@ -84,9 +92,9 @@ const SelectedCard = ({ selected }: { selected: Card | null }) => {
           opacity: 0,
         }}
         animate={{
-          opacity: 0.9,
+          opacity: 0.6,
         }}
-        className="absolute inset-0 h-full w-full bg-black opacity-90 z-10"
+        className="absolute inset-0 h-full w-full bg-black opacity-60 z-10"
       />
       <motion.div
         initial={{
