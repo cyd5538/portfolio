@@ -93,7 +93,7 @@ const HomeBlossom: React.FC = () => {
     };
   }, [width, height]);
 
-  return <canvas ref={canvasRef} className="z-50 absolute top-0 left-0" />;
+  return <canvas ref={canvasRef} className="z-40 absolute top-0 left-0" />;
 };
 
 export default HomeBlossom;
