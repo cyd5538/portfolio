@@ -9,10 +9,14 @@ export const menu = [
   },
   {
     id: 3,
-    name: "Project",
+    name: "Archiving",
   },
   {
     id: 4,
+    name: "Project",
+  },
+  {
+    id: 5,
     name: "Contact",
   },
 ];
