@@ -28,10 +28,10 @@ const Main = () => {
   ];
 
   return (
-    <main className='h-full w-full pt-14 bg-sky-300'>
+    <main className='h-full w-full pt-14 bg-sky-500'>
       <Container>
         <HomeBlossom />
-        <div className='h-screen w-full flex justify-center items-center'>
+        <div className='h-screen w-full flex justify-center items-center z-40'>
           <div className='w-2/3'>
             <TypewriterEffect words={words}/>
           </div>
