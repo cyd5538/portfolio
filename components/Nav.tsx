@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { menu } from '@/lib/menuData'
 import { Home, Menu, X } from 'lucide-react'
 import Link from 'next/link'
@@ -8,9 +8,29 @@ import { ModeToggle } from './ui/Theme-toggle';
 
 const Nav = () => {
   const [menuopen, setMenuopen] = useState<boolean>(false);  
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [bgColor, setBgColor] = useState('bg-transparent');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentPosition = window.scrollY;
+      setScrollPosition(currentPosition);
+      if (currentPosition > 0) {
+        setBgColor('bg-white dark:bg-zinc-900');
+      } else {
+        setBgColor('bg-transparent');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <header className='z-50 w-full h-16s bg-white dark:bg-zinc-900 fixed left-0 top-0 justify-center items-center gap-12'>
+    <header className={`z-50 w-full h-16 ${bgColor} fixed left-0 top-0 justify-center items-center gap-12`}>
       <nav className='container flex justify-between items-center h-14 sm:px-12 px-4'>
         <h1 className='cursor-pointer font-bold text-xl hover:text-sky-500 opacity-100'>
           <Link href={"#Home"}>

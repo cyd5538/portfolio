@@ -9,7 +9,7 @@ const HomeBlossom: React.FC = () => {
     canvas.height = 600;
 
     const ctx = canvas.getContext('2d')!;
-    const TOTAL = 100;
+    const TOTAL = 50;
     const petalArray: Petal[] = [];
 
     const petalImg = new Image();
@@ -53,8 +53,8 @@ const HomeBlossom: React.FC = () => {
         this.opacity = this.w / 40;
         this.flip = Math.random();
 
-        this.xSpeed = 1.5 + Math.random() * 1;
-        this.ySpeed = 1 + Math.random() * 0.5;
+        this.xSpeed = 1.5 + Math.random() * 0.01;
+        this.ySpeed = 1 + Math.random() * 0.05;
         this.flipSpeed = Math.random() * 0.03;
       }
 
@@ -62,8 +62,8 @@ const HomeBlossom: React.FC = () => {
         if (this.y > canvas.height || this.x > canvas.width) {
           this.x = -petalImg.width;
           this.y = (Math.random() * canvas.height * 2) - canvas.height;
-          this.xSpeed = 1.5 + Math.random() * 2;
-          this.ySpeed = 1 + Math.random() * 1;
+          this.xSpeed = 1.5 + Math.random() * 0.5;
+          this.ySpeed = 1 + Math.random() * 0.2;
           this.flip = Math.random();
         }
         ctx.globalAlpha = this.opacity;
@@ -77,8 +77,8 @@ const HomeBlossom: React.FC = () => {
       }
 
       animate() {
-        this.x += this.xSpeed + mouseX * 5;
-        this.y += this.ySpeed + mouseX * 2;
+        this.x += this.xSpeed + mouseX * 0.2;
+        this.y += this.ySpeed + mouseX * 0.1;
         this.flip += this.flipSpeed;
         this.draw();
       }
