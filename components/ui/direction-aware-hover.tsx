@@ -30,7 +30,6 @@ export const DirectionAwareHover = ({
     if (!ref.current) return;
 
     const direction = getDirection(event, ref.current);
-    console.log("direction", direction);
     switch (direction) {
       case 0:
         setDirection("top");
@@ -66,7 +65,7 @@ export const DirectionAwareHover = ({
       onMouseEnter={handleMouseEnter}
       ref={ref}
       className={cn(
-        "md:h-96 w-80 h-80 md:w-96 mx-auto bg-transparent rounded-lg overflow-hidden group/card relative",
+        "w-[360px] h-[360px] md:w-[400px] md:h-[400px] lg:h-[310px] lg:w-[310px] mx-auto bg-transparent rounded-lg overflow-hidden group/card relative",
         className
       )}
     >

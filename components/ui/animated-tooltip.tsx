@@ -75,7 +75,7 @@ export const AnimatedTooltip = ({
             </motion.div>
           )}
           <div onMouseMove={handleMouseMove} 
-          className="pobject-cover !m-0 p-2 object-top h-[66px] w-[66px] sm:h-24 sm:w-24 group-hover:scale-105 group-hover:z-30 relative transition duration-500"
+          className="pobject-cover !m-0 p-2 object-top h-[65px] w-[65px] md:w-[70px] md:h-[70px] lg:h-[100px] lg:w-[100px] group-hover:scale-105 group-hover:z-30 relative transition duration-500"
           >
             <Image
               height={100}

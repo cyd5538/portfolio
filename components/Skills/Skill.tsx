@@ -10,7 +10,7 @@ const Skill = () => {
         <h1 className='text-3xl underline text-white font-bold'>
           Skills
         </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-6 justify-center items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-6 justify-center items-center">
           <SkillList items={Frontend} title={"프레임워크 및 언어"}/>
           <SkillList items={statusManagement} title={"상태 관리"}/>
           <SkillList items={style} title={"스타일"}/>

@@ -9,7 +9,7 @@ const Archives = () => {
         <h1 className='text-3xl underline text-white font-bold'>
           Archiving
         </h1>
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-6 justify-center items-center pt-10'>
+        <div className='grid grid-cols-1 lg:grid-cols-3 gap-6 justify-center items-center pt-10'>
           <ArchivesCard />
         </div>
       </Container>
