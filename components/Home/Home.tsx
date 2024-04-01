@@ -31,7 +31,7 @@ const Main = () => {
     <main className='h-full w-full pt-14 bg-sky-500'>
       <Container>
         <HomeBlossom />
-        <div className='h-screen w-full flex justify-center items-center z-40'>
+        <div className='h-[600px] w-full flex justify-center items-center z-40'>
           <div className='w-2/3'>
             <TypewriterEffect words={words}/>
           </div>

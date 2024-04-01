@@ -1,15 +1,12 @@
 import React, { useEffect, useRef } from 'react';
-import useWindowSize from '@/hook/useWindowSize';
-
 
 const HomeBlossom: React.FC = () => {
-  const { width, height } = useWindowSize();
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
     const canvas = canvasRef.current!;
-    canvas.width = width;
-    canvas.height = height;
+    canvas.width = 1440;
+    canvas.height = 600;
 
     const ctx = canvas.getContext('2d')!;
     const TOTAL = 100;
@@ -91,7 +88,7 @@ const HomeBlossom: React.FC = () => {
       window.removeEventListener('mousemove', touchHandler);
       window.removeEventListener('touchmove', touchHandler);
     };
-  }, [width, height]);
+  }, []);
 
   return <canvas ref={canvasRef} className="z-40 absolute top-0 left-0" />;
 };
