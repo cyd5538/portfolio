@@ -4,6 +4,7 @@ import About from "@/components/About/About";
 import Archives from "@/components/Archives/Archives";
 import Main from "@/components/Home/Home";
 import Nav from "@/components/Nav";
+import Project from "@/components/Project/Project";
 import Skill from "@/components/Skills/Skill";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <About /> 
       <Skill />
       <Archives />
+      <Project />
     </div>
   );
 }
