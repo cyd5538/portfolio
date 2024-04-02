@@ -31,7 +31,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ onClose, title, body, }) =>
           
         "
       >
-        <div className="relative w-full lg:w-3/6 my-6 mx-auto lg:max-w-3xl h-full lg:h-auto ">
+        <div className="relative w-full lg:w-5/6 my-6 mx-auto lg:max-w-4xl h-full lg:h-auto ">
           <div className="
             h-full
             lg:h-auto

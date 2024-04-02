@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import ProjectModal from './ProjectModal';
+import { StickyScroll } from '../ui/sticky-scroll-reveal';
+import { project1Data } from '@/lib/project1Data';
+import { project2Data } from '@/lib/project2Data';
 
 interface PrjoectBtnProps {
   projectNumber: number;
@@ -8,11 +11,11 @@ interface PrjoectBtnProps {
 const ModalContent = [
   {
     title : "축구 커뮤니티 사이트",
-    body: <p>안녕하세요</p>
+    body: <StickyScroll content={project1Data} />
   },
   {
     title : "블로그",
-    body: <p>안녕하세요2</p>
+    body: <StickyScroll content={project2Data} />
   },
   {
     title : "님아 그 시장을 가오",
