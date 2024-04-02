@@ -5,7 +5,7 @@ import Container from '../Container';
 
 const About = () => {
   return (
-    <main className='h-screen relative w-full pt-16 pb-14 bg-sky-600' id="About">
+    <main className='h-[800px] relative w-full pt-16 pb-14 bg-sky-600' id="About">
       <Container>
         <h1 className='text-3xl underline font-bold text-white'>
           About Me
