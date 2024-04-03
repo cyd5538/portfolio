@@ -3,6 +3,7 @@ import ProjectModal from './ProjectModal';
 import { StickyScroll } from '../ui/sticky-scroll-reveal';
 import { project1Data } from '@/lib/project1Data';
 import { project2Data } from '@/lib/project2Data';
+import { project3Data } from '@/lib/project3Data';
 
 interface PrjoectBtnProps {
   projectNumber: number;
@@ -19,7 +20,7 @@ const ModalContent = [
   },
   {
     title : "님아 그 시장을 가오",
-    body: <p>안녕하세요3</p>
+    body: <StickyScroll content={project3Data} />
   },
   {
     title : "포트폴리오 사이트",
