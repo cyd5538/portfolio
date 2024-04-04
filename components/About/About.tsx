@@ -5,9 +5,9 @@ import Container from '../Container';
 
 const About = () => {
   return (
-    <main className='h-[800px] relative w-full pt-16 pb-14 bg-sky-600' id="About">
+    <main className='h-[800px] relative w-full pt-16 pb-14 bg-pink-100 dark:bg-zinc-900' id="About">
       <Container>
-        <h1 className='text-3xl underline font-bold text-white'>
+        <h1 className='text-4xl underline font-bold '>
           About Me
         </h1>
       </Container>
@@ -19,7 +19,7 @@ const About = () => {
 const SkeletonOne = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-white">저는 이런 사람입니다.</p>
+      <p className="font-bold text-2xl text-white underline">저는 이런 사람입니다.</p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
       안녕하세요! 저는 최영진입니다. 프론트엔드 개발자로서다양한 웹 애플리케이션을 개발하고 있습니다. 
@@ -33,7 +33,7 @@ const SkeletonOne = () => {
 const SkeletonTwo = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-white">내 성격의 장단점</p>
+      <p className="font-bold text-2xl text-white underline">내 성격의 장단점</p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
       제 성격의 장점은 <b className="underline">친화적인 성격</b>으로, 다양한 역할을 가진 동료들과의 협업을 원활하게 이끌어내며,  
@@ -46,7 +46,7 @@ const SkeletonTwo = () => {
 const SkeletonThree = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-white">나만의 강점</p>
+      <p className="font-bold text-2xl text-white underline">나만의 강점</p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
       제 강점은 끊임없는 학습과 성장에 대한 열정입니다. 팀원들과 소통하면서 배우는 것을 즐기고, 제가 알고 있는 지식이 있다면 적극적으로 공유하여 팀 전체가 함께 성장할 수 있도록 노력합니다. 
@@ -60,7 +60,7 @@ const SkeletonThree = () => {
 const SkeletonFour = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-white">저는 ___ 사람입니다.</p>
+      <p className="font-bold text-3xl text-white underline">저는 ___ 사람입니다.</p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
         가독성과 유지보수가 용이한 코드를 짜기위해 노력하는

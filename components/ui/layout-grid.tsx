@@ -75,7 +75,7 @@ const BlurImage = ({ card, selected }: { card: Card, selected: Card | null }) =>
         )}
         alt="thumbnail"
       />
-      <p className={cn("absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl text-center font-bold bg-black/70 p-2 px-6 rounded-md",
+      <p className={cn("absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl text-center font-bold bg-zinc-800 bg-opacity-90 p-2 px-4 rounded-md",
         selected?.id === card.id ? "visually-hidden hidden" : "text-white"
       )}>
         {card.title}
@@ -92,9 +92,9 @@ const SelectedCard = ({ selected }: { selected: Card | null }) => {
           opacity: 0,
         }}
         animate={{
-          opacity: 0.6,
+          opacity: 0.4,
         }}
-        className="absolute inset-0 h-full w-full bg-black opacity-60 z-10"
+        className="absolute inset-0 h-full w-full bg-black opacity-40 z-10"
       />
       <motion.div
         initial={{

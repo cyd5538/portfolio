@@ -20,7 +20,7 @@ const Main = () => {
     },
     {
       text: "최영진",
-      className: "text-blue-300 dark:text-white underline",
+      className: "text-blue-500 dark:text-blue-500 underline",
     },
     {
       text: "입니다.",
@@ -28,7 +28,7 @@ const Main = () => {
   ];
 
   return (
-    <main className='h-full w-full pt-14 bg-sky-300'>
+    <main className='h-full w-full pt-14 bg-pink-200 dark:bg-zinc-800'>
       <Container>
         <HomeBlossom />
         <div className='h-[600px] w-full flex justify-center items-center z-40'>

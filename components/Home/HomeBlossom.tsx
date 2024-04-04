@@ -48,8 +48,8 @@ const HomeBlossom: React.FC = () => {
       constructor() {
         this.x = Math.random() * canvas.width;
         this.y = (Math.random() * canvas.height * 2) - canvas.height;
-        this.w = 25 + Math.random() * 15;
-        this.h = 20 + Math.random() * 10;
+        this.w = 45 + Math.random() * 15;
+        this.h = 40 + Math.random() * 10;
         this.opacity = this.w / 40;
         this.flip = Math.random();
 

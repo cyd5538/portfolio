@@ -5,9 +5,9 @@ import { backend, etc, Frontend, statusManagement, style, test } from '@/lib/ski
 
 const Skill = () => {
   return (
-    <main className='relative w-full pt-16 pb-20 bg-sky-700' id="Skills">
+    <main className='relative w-full pt-16 pb-20 bg-pink-200 dark:bg-zinc-800' id="Skills">
       <Container>
-        <h1 className='text-3xl underline text-white font-bold'>
+        <h1 className='text-4xl underline font-bold'>
           Skills
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-6 justify-center items-center">

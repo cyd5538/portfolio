@@ -16,7 +16,7 @@ const Nav = () => {
       const currentPosition = window.scrollY;
       setScrollPosition(currentPosition);
       if (currentPosition > 0) {
-        setBgColor('bg-white dark:bg-zinc-900');
+        setBgColor('bg-white dark:bg-zinc-600');
       } else {
         setBgColor('bg-transparent');
       }
@@ -47,7 +47,7 @@ const Nav = () => {
           ))}
           <li><ModeToggle /></li>
         </ul>
-        <div onClick={() => setMenuopen(!menuopen)} className='sm:hidden flex cursor-pointer p-2 bg-sky-500 rounded-lg text-white hover:bg-sky-600 dark:bg-zinc-950 hover:dark:bg-zinc-800 transition duration-500 delay-100'>
+        <div onClick={() => setMenuopen(!menuopen)} className='sm:hidden flex cursor-pointer p-1 bg-sky-500 rounded-md text-white hover:bg-sky-600 dark:bg-zinc-950 hover:dark:bg-zinc-800 transition duration-500 delay-100'>
           {menuopen ? <X />  : <Menu /> } 
           {menuopen ? <ResponsiveNavbar /> : null }
         </div>
@@ -58,7 +58,7 @@ const Nav = () => {
 
 const ResponsiveNavbar = () => {
   return (
-    <div className='absolute top-14 left-0 w-full h-[600px] bg-sky-900 dark:bg-zinc-800 py-4 px-2'>
+    <div className='absolute top-14 left-0 w-full h-[600px] bg-sky-500 dark:bg-zinc-800 py-4 px-2'>
       <ul className='flex flex-col gap-4 sm:gap-4'>
         {menu.map(data => (
           <li className='flex' key={data.id}>
