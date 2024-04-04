@@ -13,6 +13,9 @@ const config = {
 	],
   prefix: "",
   theme: {
+    fontFamily: {
+      KCCHanbit: ["KCC-Hanbit"],
+    },
     container: {
       center: true,
       padding: "2rem",
