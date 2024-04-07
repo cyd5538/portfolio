@@ -20,7 +20,7 @@ const Main = () => {
     },
     {
       text: "최영진",
-      className: "text-blue-500 dark:text-blue-500 underline",
+      className: "text-white dark:text-blue-500 underline",
     },
     {
       text: "입니다.",
@@ -28,11 +28,11 @@ const Main = () => {
   ];
 
   return (
-    <main className='h-full w-full pt-14 bg-pink-200 dark:bg-zinc-800'>
+    <main className='h-full w-full pt-14 bg-sky-500 dark:bg-zinc-800'>
       <Container>
         <HomeBlossom />
         <div className='h-[600px] w-full flex justify-center items-center z-40'>
-          <div className='w-2/3'>
+          <div>
             <TypewriterEffect words={words}/>
           </div>
         </div>

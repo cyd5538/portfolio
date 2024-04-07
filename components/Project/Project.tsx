@@ -5,7 +5,7 @@ import { items } from '@/lib/ProjectData';
 
 const Project = () => {
   return (
-    <main className='relative w-full pt-16 pb-20 bg-pink-200 dark:bg-zinc-800' id="Project">
+    <main className='relative w-full pt-16 pb-20 bg-orange-300 dark:bg-zinc-800' id="Project">
     <Container>
       <h1 className='text-4xl underline font-bold pb-10'>Project</h1>
       <BentoGrid className="max-w-5xl mx-auto md:auto-rows-[20rem]">

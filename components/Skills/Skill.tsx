@@ -5,7 +5,7 @@ import { backend, etc, Frontend, statusManagement, style, test } from '@/lib/ski
 
 const Skill = () => {
   return (
-    <main className='relative w-full pt-16 pb-20 bg-pink-200 dark:bg-zinc-800' id="Skills">
+    <main className='relative w-full pt-16 pb-20 bg-red-300 dark:bg-zinc-800' id="Skills">
       <Container>
         <h1 className='text-4xl underline font-bold'>
           Skills
