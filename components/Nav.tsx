@@ -16,7 +16,7 @@ const Nav = () => {
       const currentPosition = window.scrollY;
       setScrollPosition(currentPosition);
       if (currentPosition > 0) {
-        setBgColor('bg-white dark:bg-zinc-600');
+        setBgColor('bg-white dark:bg-zinc-950');
       } else {
         setBgColor('bg-transparent');
       }
