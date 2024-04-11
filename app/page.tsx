@@ -2,6 +2,7 @@
 
 import About from "@/components/About/About";
 import Archives from "@/components/Archives/Archives";
+import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer/Footer";
 import Main from "@/components/Home/Home";
 import Nav from "@/components/Nav";
@@ -17,6 +18,7 @@ export default function Home() {
       <Skill />
       <Archives />
       <Project />
+      <Contact />
       <Footer />
     </div>
   );
