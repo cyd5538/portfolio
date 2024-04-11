@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import ProjectModal from './ProjectModal';
 import { StickyScroll } from '../ui/sticky-scroll-reveal';
-import { project1Data } from '@/lib/project1Data';
-import { project2Data } from '@/lib/project2Data';
-import { project3Data } from '@/lib/project3Data';
+import { project1Data } from '@/data/project1Data';
+import { project2Data } from '@/data/project2Data';
+import { project3Data } from '@/data/project3Data';
 
 interface PrjoectBtnProps {
   projectNumber: number;

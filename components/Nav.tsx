@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from 'react'
-import { menu } from '@/lib/menuData'
+import { menu } from '@/data/menuData'
 import { Home, Menu, X } from 'lucide-react'
 import Link from 'next/link'
 import { ModeToggle } from './ui/Theme-toggle';

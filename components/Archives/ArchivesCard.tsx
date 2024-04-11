@@ -1,6 +1,6 @@
 import React from 'react'
 import { DirectionAwareHover } from '../ui/direction-aware-hover'
-import { archivesData } from '@/lib/archivesData'
+import { archivesData } from '@/data/archivesData'
 import Link from 'next/link'
 
 const ArchivesCard = () => {

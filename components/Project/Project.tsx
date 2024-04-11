@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from '../Container';
 import { BentoGrid, BentoGridItem } from '../ui/bento-grid';
-import { items } from '@/lib/ProjectData';
+import { items } from '@/data/ProjectData';
 
 const Project = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from '../Container'
 import SkillList from './SkillList'
-import { backend, etc, Frontend, statusManagement, style, test } from '@/lib/skillsData'
+import { backend, etc, Frontend, statusManagement, style, test } from '@/data/skillsData'
 
 const Skill = () => {
   return (
