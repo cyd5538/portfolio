@@ -43,7 +43,6 @@ export function ContactForm() {
             rows={8}
             id="Messeage"
             placeholder="내용을 입력해주세요."
-            type="text"
             onChange={(e) => setText(e.target.value)} />
         </LabelInputContainer>
         <button
