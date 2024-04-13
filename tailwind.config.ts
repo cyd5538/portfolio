@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss"
 import svgToDataUri from "mini-svg-data-uri";
+import plugin from 'tailwindcss/plugin';
 
 const {
   default: flattenColorPalette,
@@ -26,6 +27,13 @@ const config = {
       },
     },
     extend: {
+      textShadow: {
+        xs: '0 1px 2px var(--tw-shadow-color)',
+        sm: '0 2px 4px var(--tw-shadow-color)',
+        base: '0 4px 8px var(--tw-shadow-color)',
+        md: '0 8px 16px var(--tw-shadow-color)',
+        lg: '0 12px 24px var(--tw-shadow-color)',
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -91,19 +99,31 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), addVariablesForColors,
-  function ({ matchUtilities, theme }: any) {
-    matchUtilities(
-      {
-        "bg-dot-thick": (value: any) => ({
-          backgroundImage: `url("${svgToDataUri(
-            `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="none"><circle fill="${value}" id="pattern-circle" cx="10" cy="10" r="2.5"></circle></svg>`
-          )}")`,
-        }),
-      },
-      { values: flattenColorPalette(theme("backgroundColor")), type: "color" }
-    );
-  },
+  plugins: [
+    require("tailwindcss-animate"), 
+    addVariablesForColors,
+    function ({ matchUtilities, theme }: any) {
+      matchUtilities(
+        {
+          "bg-dot-thick": (value: any) => ({
+            backgroundImage: `url("${svgToDataUri(
+              `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="none"><circle fill="${value}" id="pattern-circle" cx="10" cy="10" r="2.5"></circle></svg>`
+            )}")`,
+          }),
+        },
+        { values: flattenColorPalette(theme("backgroundColor")), type: "color" }
+      );
+    },
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          'text-shadow': (value) => ({
+            textShadow: value,
+          }),
+        },
+        { values: theme('textShadow') }
+      )
+    })
   ],
 } satisfies Config
 
