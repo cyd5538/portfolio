@@ -4,6 +4,7 @@ import { StickyScroll } from '../ui/sticky-scroll-reveal';
 import { project1Data } from '@/data/project1Data';
 import { project2Data } from '@/data/project2Data';
 import { project3Data } from '@/data/project3Data';
+import { project4Data } from '@/data/project4Data';
 
 interface PrjoectBtnProps {
   projectNumber: number;
@@ -24,7 +25,7 @@ const ModalContent = [
   },
   {
     title : "포트폴리오 사이트",
-    body: <p>안녕하세요4</p>
+    body: <StickyScroll content={project4Data} />
   },
 ]
 
