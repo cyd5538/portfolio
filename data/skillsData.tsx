@@ -81,28 +81,28 @@ export const test = [
   {
     id: 1,
     name: "jest",
-    designation: "tailwindcss를 활용하여 쉽고 빠르게 반응형 UI를 개발할 수 있습니다.",
+    designation: "Jest를 사용하여 단위 테스트를 할 수 있습니다.",
     image:
       "https://skillicons.dev/icons?i=jest",
   },
   {
     id: 2,
     name: "vitest",
-    designation: "styled-components를 활용하여 재사용 가능한 컴포넌트를 만들고 관리할 수 있습니다.",
+    designation: "vitest를 사용하여 UI 컴포넌트의 단위 테스트를 할 수 있습니다.",
     image:
       "https://skillicons.dev/icons?i=vitest",
   },
   {
     id: 3,
     name: "react-testing-libeary",
-    designation: "Framer-motion을 사용해서 간단한 애니메이션을 구현할 수 있습니다.",
+    designation: "react-testing-library를 사용하여 React 컴포넌트의 테스트를 수행할 수 있습니다.",
     image:
       "https://velog.velcdn.com/images/cyd5538/post/26e555b0-c3ad-42fd-9593-00d11bc7101a/image.png",
   },
   {
     id: 4,
     name: "MSW",
-    designation: "Framer-motion을 사용해서 간단한 애니메이션을 구현할 수 있습니다.",
+    designation: "MSW를 사용하여 가짜 서버를 모킹하고 API 요청을 테스트 해 본 경험이 있습니다.",
     image:
       "https://velog.velcdn.com/images/cyd5538/post/81f591d3-5b24-482f-91aa-ffa0c1287b11/image.png",
   },
