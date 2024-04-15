@@ -6,7 +6,7 @@ interface ContainerProps {
 
 const Container: React.FC<ContainerProps> = ({ children }) => {
   return (
-    <div className='container w-full relative overflow-x-hidden'>
+    <div className='container w-full relative overflow-hidden pb-20'>
       {children} 
     </div>
   );

@@ -5,8 +5,8 @@ const ContactBlossom: React.FC = () => {
 
   useEffect(() => {
     const canvas = canvasRef.current!;
-    canvas.width = 5000;
-    canvas.height = 800;
+    canvas.width = 1440;
+    canvas.height = 700;
 
     const ctx = canvas.getContext('2d')!;
     const TOTAL = 50;

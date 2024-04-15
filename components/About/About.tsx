@@ -5,12 +5,12 @@ import Container from '../Container';
 
 const About = () => {
   return (
-    <main className='h-[800px] relative w-full pt-16 pb-14 bg-green-300 dark:bg-zinc-900' id="About">
-      <Container>
+    <main className='h-[800px] relative w-full pt-16 pb-20 bg-green-300 dark:bg-zinc-900' id="About">
+      <div className='container'>
         <h1 className='text-4xl underline font-bold pb-4 text-shadow-base shadow-yellow-500'>
           About Me
         </h1>
-      </Container>
+      </div>
       <LayoutGrid cards={cards}/>
     </main>
   )
