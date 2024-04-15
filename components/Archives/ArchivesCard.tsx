@@ -12,7 +12,7 @@ const ArchivesCard = () => {
           {data.description.map((desc, index) => (
             <p key={index} className="font-normal text-sm pb-2">{desc}</p>
           ))}
-          <Link href={data.link}>
+          <Link href={data.link} target='_blank'>
             <button className="px-4 py-2 rounded-md border text-black border-black bg-white text-neutarl-700 text-sm hover:shadow-[4px_4px_0px_0px_rgba(0,0,0)] transition duration-200">
               👉{data.linkTitle}
             </button>
