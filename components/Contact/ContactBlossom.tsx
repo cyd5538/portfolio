@@ -1,12 +1,12 @@
 import React, { useEffect, useRef } from 'react';
 
-const HomeBlossom: React.FC = () => {
+const ContactBlossom: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
     const canvas = canvasRef.current!;
-    canvas.width = 1440;
-    canvas.height = 600;
+    canvas.width = 5000;
+    canvas.height = 800;
 
     const ctx = canvas.getContext('2d')!;
     const TOTAL = 50;
@@ -90,7 +90,7 @@ const HomeBlossom: React.FC = () => {
     };
   }, []);
 
-  return <canvas ref={canvasRef} className="z-40 absolute top-0 left-0" />;
+  return <canvas ref={canvasRef} className="absolute overflow-hidden" />;
 };
 
-export default HomeBlossom;
+export default ContactBlossom;
