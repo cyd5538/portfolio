@@ -90,7 +90,7 @@ const ContactBlossom: React.FC = () => {
     };
   }, []);
 
-  return <canvas ref={canvasRef} className="absolute overflow-hidden" />;
+  return <canvas ref={canvasRef} className="absolute top-0 overflow-hidden" />;
 };
 
 export default ContactBlossom;
