@@ -97,27 +97,4 @@ export const project2Data = [
       </div>
     ),
   },
-  {
-    title: "코드 개선",
-    description:(
-      <ul className="tracking-wide leading-6 flex flex-col gap-2">
-        <li>탭 메뉴를 키-값 형태로 매핑하여 유지보수를 간편하게 했습니다.</li> 
-        <li>Redux 대신 Zustand를 사용하여 코드 양을 약 50% 줄였습니다.</li> 
-        <li>React Query의 useQuery와 useMutation 등의 훅을 사용하여 코드 양을 약 30% 감소시켰습니다.</li> 
-        <li>vitest와 react-testing-library를 이용하여 단위 테스트 코드를 작성하여 코드의 안정성을 향상시켰습니다.</li> 
-        <li>폴더 구조를 개선하여 코드의 가독성과 유지보수성을 향상시켰습니다.</li> 
-      </ul>
-    ),
-    content: (
-      <div className="h-full w-full flex items-center justify-center text-white">
-        <Image
-          src="https://velog.velcdn.com/images/cyd5538/post/619ac153-4528-40fb-ad79-ef1bbf607d27/image.png"
-          width={300}
-          height={300}
-          className="h-full w-full object-cover"
-          alt=""
-        />
-      </div>
-    ),
-  },
 ];

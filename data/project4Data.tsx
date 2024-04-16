@@ -18,7 +18,7 @@ export const project4Data = [
             </Link>
           </button>        
           <button className="px-4 py-2 rounded-md border border-black bg-white text-black text-sm hover:shadow-[4px_4px_0px_0px_rgba(250,250,250)] transition duration-200 dark:bg-zinc-800 dark:text-white">
-            <Link target="_blank" href="https://github.com/cyd5538/Yjin-blog" className="flex gap-2 justify-center items-center">
+            <Link target="_blank" href="https://github.com/cyd5538/portfolio" className="flex gap-2 justify-center items-center">
               <Code /> 소스 코드
             </Link>
           </button>        
@@ -81,14 +81,15 @@ export const project4Data = [
       <ul className="tracking-wide leading-6 flex flex-col gap-2">
         <li>Framer Motion을 사용하여 다양한 애니메이션을 구현하고 배웠습니다.</li> 
         <li>canvas를 활용하여 애니메이션을 구현하는 방법을 배웠습니다</li> 
-        <li>프로젝트 정보를 객체 배열로 구성하여 효율적으로 관리하는 방법</li>
-        <li>Next.js 14를 사용하면서 공식 문서를 참고하여 이미지 최적화, 라우팅, 데이터 페칭 등의 주요 기능을 배웠습니다.</li>
+        <li>정보를 객체 배열로 구성하여 효율적으로 관리하는 방법을 배웠습니다.</li>
+        <li>Next.js 14를 사용하면서 공식 문서를 참고하여 이미지 최적화, 라우팅, 데이터 페칭 등의 주요 을 배웠습니다.</li>
+        <li>lighthouse를 성능을 측정하고 Performance, Accessibility, Best Practices 를 개선한 경험</li>
       </ul>
     ),
     content: (
       <div className="h-full w-full flex items-center justify-center text-white">
         <Image
-          src="https://velog.velcdn.com/images/cyd5538/post/fa0ea7b6-5f80-4f73-b4b3-29743553997e/image.png"
+          src="https://velog.velcdn.com/images/cyd5538/post/86f4127d-2a71-4a30-b901-2af8a3b3dc8b/image.png"
           width={300}
           height={300}
           className="h-full w-full object-cover"

@@ -30,7 +30,7 @@ export const items = [
     title: "프로젝트4. 포트폴리오 사이트",
     description:
       "Nextjs14와 tailwindcss framer-motion을 사용한 포트폴리오 사이트입니다.",
-    header: <ProjectImage src="https://velog.velcdn.com/images/cyd5538/post/8743b0ed-e0c0-4652-b3b9-14ae7556b976/image.png" />,
+    header: <ProjectImage src="https://velog.velcdn.com/images/cyd5538/post/eb3dc244-0ab4-406f-b885-20a24b838611/image.png" />,
     className: "md:col-span-1",
     icon: <PrjoectBtn projectNumber={3}/>,
   },
