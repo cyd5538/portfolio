@@ -77,11 +77,11 @@ export const project3Data = [
     ),
   },
   {
-    title: "프로젝트를 통해 배운 점",
+    title: "성과 및 배운점",
     description:(
       <ul className="tracking-wide leading-6 flex flex-col gap-2">
         <li>Nextauth를 사용한 로그인, 회원가입 및 SNS 간편 로그인 Oauth</li> 
-        <li>카카오톡 지도 API </li> 
+        <li>카카오톡 지도 API를 사용한 마커 표시</li> 
         <li>SVG 이미지를 사용해서 사용자 친화적인 인터페이스 구성</li>
         <li>React-hook-form을 사용한 유효성 검사</li>
       </ul>

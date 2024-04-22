@@ -76,14 +76,14 @@ export const project4Data = [
     ),
   },
   {
-    title: "프로젝트를 통해 배운 점",
+    title: "성과 및 배운점",
     description:(
       <ul className="tracking-wide leading-6 flex flex-col gap-2">
-        <li>Framer Motion을 사용하여 다양한 애니메이션을 구현하고 배웠습니다.</li> 
-        <li>canvas를 활용하여 애니메이션을 구현하는 방법을 배웠습니다</li> 
-        <li>정보를 객체 배열로 구성하여 효율적으로 관리하는 방법을 배웠습니다.</li>
-        <li>Next.js 14를 사용하면서 공식 문서를 참고하여 이미지 최적화, 라우팅, 데이터 페칭 등의 주요 을 배웠습니다.</li>
-        <li>lighthouse를 성능을 측정하고 Performance, Accessibility, Best Practices 를 개선한 경험</li>
+        <li>Framer Motion을 사용하여 다양한 애니메이션을 구현하고 배움</li> 
+        <li>canvas를 활용하여 애니메이션을 구현하는 방법움</li> 
+        <li>정보를 객체 배열로 구성하여 효율적으로 관리하는 방법</li>
+        <li>Next.js 14를 사용하면서 공식 문서를 참고하여 이미지 최적화, 라우팅, 데이터 페칭, 서버 액션 등의 주요 개념과 동작</li>
+        <li>lighthouse를 성능을 측정하고 Performance(82 ➡ 97), Accessibility(90 ➡ 100), Best Practices(88 ➡ 96) 를 개선한 경험</li>
       </ul>
     ),
     content: (

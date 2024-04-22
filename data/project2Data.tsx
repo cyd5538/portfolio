@@ -77,11 +77,11 @@ export const project2Data = [
     ),
   },
   {
-    title: "프로젝트를 통해 배운 점",
+    title: "성과 및 배운점",
     description:(
       <ul className="tracking-wide leading-6 flex flex-col gap-2">
         <li>서버 사이드 렌더링(SSR)과 클라이언트 사이드 렌더링(CSR)의 조합을 통해 검색 엔진 최적화(SEO)</li> 
-        <li>Google Sitemap에 등록하여 웹 사이트의 검색 엔진 노출</li> 
+        <li>Google Sitemap에 등록하여 웹 사이트의 검색 엔진 노출 (총 클릭수 208, 총 노출수 2450 성과 달상)</li> 
         <li>Google Analytics에 등록하여 다양한 디바이스에서의 사용자 행동 및 반응을 모니터링하고 분석</li>
       </ul>
     ),
