@@ -13,12 +13,12 @@ export const project3Data = [
         </div>
         <div className="flex gap-2">
           <button className="px-4 py-2 rounded-md border border-black bg-white text-black text-sm hover:shadow-[4px_4px_0px_0px_rgba(250,250,250)] transition duration-200 dark:bg-zinc-800 dark:text-white">
-            <Link target="_blank" href="https://yjin.vercel.app/" className="flex gap-2 justify-center items-center">
+            <Link target="_blank" href="https://marketgao.vercel.app/" className="flex gap-2 justify-center items-center">
               <Book /> 배포 주소
             </Link>
           </button>        
           <button className="px-4 py-2 rounded-md border border-black bg-white text-black text-sm hover:shadow-[4px_4px_0px_0px_rgba(250,250,250)] transition duration-200 dark:bg-zinc-800 dark:text-white">
-            <Link target="_blank" href="https://github.com/cyd5538/Yjin-blog?tab=readme-ov-file" className="flex gap-2 justify-center items-center">
+            <Link target="_blank" href="https://github.com/cyd5538/marketgao" className="flex gap-2 justify-center items-center">
               <Code /> 소스 코드
             </Link>
           </button>        
